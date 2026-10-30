@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#09251C">
-<title>المنجزات العُمانية مطلع العصور الحديثة</title>
+<title>المنجزات العمانية مطلع العصور الحديثة</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -218,7 +218,7 @@ footer{color:#2f5d4b}
   <header class="hud">
     <div class="brand">
       <svg width="42" height="42" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="#fff" stroke="#09251C" stroke-width="3"/><circle cx="24" cy="24" r="8" fill="none" stroke="#A55704" stroke-width="3"/><path d="M24 4V44M4 24H44M10 10L38 38M38 10L10 38" stroke="#09251C" stroke-width="2.6" stroke-linecap="round"/><circle cx="24" cy="24" r="3" fill="#09251C"/></svg>
-      <div><h1>المنجزات العُمانية مطلع العصور الحديثة</h1><small>الصف السابع · العصر العباسي الأول</small></div>
+      <div><h1>المنجزات العمانية مطلع العصور الحديثة</h1><small>الصف السابع · العصر العباسي الأول</small></div>
     </div>
     <div class="seal"><b id="sStars">٠</b><span>النجوم</span></div>
     <div class="seal"><b id="sScore">٠</b><span>النقاط</span></div>
@@ -241,7 +241,7 @@ footer{color:#2f5d4b}
   <div class="ic2">
     <div class="top">
       <div class="lesson">الصف السابع · العصر العباسي الأول</div>
-      <h2><span class="ink">المنجزات العُمانية</span><span class="ink d2 l2">مطلع العصور الحديثة</span></h2>
+      <h2><span class="ink">المنجزات العمانية</span><span class="ink d2 l2">مطلع العصور الحديثة</span></h2>
     </div>
     <div class="bot">
       <button class="btn" id="startBtn">ابدأ الرحلة ✦</button>
@@ -262,7 +262,7 @@ const CFG={
  deco:(PX,PY)=>{const sh=(a,dur,k,beg)=>{const p='M'+a.map(q=>PX(q[0]).toFixed(1)+' '+PY(q[1]).toFixed(1)).join('L');return `<g><animateMotion dur="${dur}s" begin="${beg}s" repeatCount="indefinite" path="${p}"/><g class="lb" data-x="0" data-y="0" data-k="${k}"><g transform="translate(0 -4)">${CFG.shipSym}</g></g></g>`};
   return sh([[49.2,29],[51,28],[53,27.2]],60,.4,0)+sh([[53.5,26.9],[51.5,27.9],[49.4,29]],70,.4,-25)+sh([[57.5,25.2],[59,24.6],[60.6,23.4]],50,.38,-10)+sh([[59.4,19],[60.6,20.2],[61.8,21.4]],60,.38,-30)},
  cert:{bg:'#F8EADC',frame:'#09251C',title:'#A55704',name:'#09251C',text:'#09251C',line:'#2f5d4b',lesson:'#2f5d4b',chip:'#09251C',chipText:'#ffe08a'},
- certLesson:'المنجزات العُمانية مطلع العصور الحديثة - الصف الثامن',
+ certLesson:'المنجزات العمانية مطلع العصور الحديثة - الصف الثامن',
  certChips:['البصرة','الخليج العربي','حملة خازم بن خزيمة','جزيرة ابن كاوان','جلفار','حملة عيسى بن جعفر','حتا','نزوى'],
  QS:[
   {p:'حدّد',t:'حدّد <b>الميناء</b> الذي خرجت منه الحملات العباسية للسيطرة على الإمامة في عمان.',n:'البصرة',c:[47.8,30.5],tol:.55,hr:44,f:'البصرة: الميناء الذي انطلقت منه الحملات العباسية إلى عمان.'},
@@ -377,7 +377,7 @@ svg.addEventListener('click',e=>{
   if(moved||locked||phase!=='ask')return;const q=Q[qi];
   if(q.type==='gov'){const gid=e.target.dataset&&e.target.dataset.gid;
     if(gid===q.gid)return correct(q,()=>{const el=svg.querySelector('.gov[data-gid="'+q.gid+'"]');el&&el.classList.add('on');mk(CFG.mark(q.n,true),q.c[0],q.c[1],1,'m'+qi)});
-    wrong(gid?'ليست هذه المحافظة، جرّب مرة أخرى':'اضغط داخل حدود سلطنة عُمان');return}
+    wrong(gid?'ليست هذه المحافظة، جرّب مرة أخرى':'اضغط داخل حدود سلطنة عمان');return}
   if(q.ok){const [ox,oy]=toMap(e),[olo,ola]=toLL(ox,oy),oid=e.target.dataset&&e.target.dataset.id;if(q.ok(olo,ola,oid))return correct(q,()=>mk(CFG.mark(q.n,true),q.c[0],q.c[1],1,'m'+qi));wrong(oid?'اضغط على المسطح المائي نفسه':'ليس هذا هو الموقع، جرّب مرة أخرى');return}
   const [mx,my]=toMap(e),[lo,la]=toLL(mx,my);
   const d=Math.hypot(lo-q.c[0],la-q.c[1]),tol=Math.max(q.tol,CFG.minPx*ms/K);
@@ -390,7 +390,7 @@ function refSamples(R){const out=[];for(let i=0;i<R.length-1;i++){const a=R[i],b
 function judgeRoute(pts,r){
   const D=[];for(let i=0;i<pts.length;i++){D.push(pts[i]);if(i<pts.length-1){const a=pts[i],b=pts[i+1],n=Math.ceil(dist(a,b)/.3);for(let t=1;t<n;t++)D.push([a[0]+(b[0]-a[0])*t/n,a[1]+(b[1]-a[1])*t/n])}}
   const st=r.ref[0],en=r.end;
-  if(dist(D[0],st)>(r.stTol||5)&&dist(D[D.length-1],st)>(r.stTol||5))return{ok:false,msg:'ابدأ الرسم من سواحل عُمان'};
+  if(dist(D[0],st)>(r.stTol||5)&&dist(D[D.length-1],st)>(r.stTol||5))return{ok:false,msg:'ابدأ الرسم من سواحل عمان'};
   if(dist(D[0],st)>(r.stTol||5))D.reverse();
   if(dist(D[D.length-1],en)>(r.enTol||7))return{ok:false,msg:r.endMsg};
   const R=refSamples(r.ref),TOL=r.tol;
